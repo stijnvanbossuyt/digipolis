@@ -1,0 +1,6 @@
+<button *ngIf="!session" type="button" (click)="handleAuth()">Connect</button>
+<div *ngIf="session">
+    <h3>User session:</h3>
+    <pre>{{ session }}</pre>
+    <button type="button" (click)="signOut()">Sign out</button>
+</div>
